@@ -1,0 +1,110 @@
+.background{
+    background-color: burlywood;
+    width: 100%;
+    text-align: center;
+}
+.part1 h2 {
+    color:red;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.part1 p {
+    color: white;
+    background-color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.part2 h2 {
+    color:green;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.part2 p {
+    color: green;
+    background-color: darkred;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.part3 {
+    color:green;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.part4 p {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.part4 > p {
+    color: green;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.csym019 {
+    display: inline;
+    float: left;
+    width: 50%;
+    background-color: cornflowerblue;
+}
+
+.csym015 {
+    display: inline;
+    float: right;
+    width: 50%;
+    background-color: yellow;
+}
+
+nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+aside{
+    background-color: lightgreen;
+    grid-area: aside;
+}
+main {
+    background-color: darkblue;
+    color: white;
+    grid-area: main;
+    
+}
+header {
+    background-color: blue;
+    color: white;
+    grid-area: header;
+    padding: 20px;
+}
+footer {
+    background-color: darkgreen;
+    grid-area: footer;
+    color: white;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+                        "nav main aside"
+                        "footer footer footer";
+}
