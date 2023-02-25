@@ -8,6 +8,7 @@ aside{
     background-color: rgb(255, 255, 255);
     grid-area: aside;
     border: black solid 1%;
+    margin: 2%;
 }
 main {
     background-color: whitesmoke;
