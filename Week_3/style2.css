@@ -3,7 +3,6 @@ nav {
     grid-area: nav;
     display: block;
     float: left;
-    
 }
 aside{
     background-color: lightgreen;
