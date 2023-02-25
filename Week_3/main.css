@@ -1,28 +1,35 @@
+
 nav {
-    background-color: yellow;
+    background-color: white;
     grid-area: nav;
+    border: black solid 1%;
 }
 aside{
-    background-color: lightgreen;
+    background-color: rgb(255, 255, 255);
     grid-area: aside;
+    border: black solid 1%;
 }
 main {
-    background-color: rgba(183,172,170,255);
+    background-color: whitesmoke;
     color: white;
     grid-area: main;
     text-align: center;
     
 }
 header {
-    background-color: blue;
+    background-color: rgb(26, 150, 117);
     color: white;
     grid-area: header;
     padding: 20px;
+    text-align: center;
+    border-radius: 30em;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 footer {
-    background-color: darkgreen;
+    background-color: rgb(26, 150, 117);
     grid-area: footer;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .wrapper{
     display: grid;
