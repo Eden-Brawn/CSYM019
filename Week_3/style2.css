@@ -1,6 +1,8 @@
 nav {
     background-color: yellow;
     grid-area: nav;
+    display: block;
+    float: left;
 }
 aside{
     background-color: lightgreen;
@@ -32,3 +34,4 @@ footer {
                         "main main aside"
                         "footer footer footer";
 }
+
