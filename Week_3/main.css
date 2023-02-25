@@ -10,6 +10,7 @@ main {
     background-color: darkblue;
     color: white;
     grid-area: main;
+    text-align: center;
     
 }
 header {
@@ -30,4 +31,9 @@ footer {
     grid-template-areas: "header header header"
                         "nav main aside"
                         "footer footer footer";
+}
+img{
+    width: 60%;
+    height: auto;
+    border-radius: 25%;
 }
