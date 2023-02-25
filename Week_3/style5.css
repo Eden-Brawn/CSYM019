@@ -31,3 +31,13 @@ footer {
                         "main main main aside"
                         "footer footer footer footer";
 }
+ul{
+    list-style: none;
+    padding: 1%;
+    padding-bottom: 2%;
+}
+
+a{
+    float: left;
+    margin-left: 20%;
+}
