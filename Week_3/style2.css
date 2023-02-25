@@ -3,6 +3,7 @@ nav {
     grid-area: nav;
     display: block;
     float: left;
+    
 }
 aside{
     background-color: lightgreen;
@@ -34,4 +35,13 @@ footer {
                         "main main aside"
                         "footer footer footer";
 }
+ul{
+    list-style: none;
+    padding: 2%;
+    padding-bottom: 3%;
+}
 
+a{
+    float: left;
+    margin-left: 20%;
+}
