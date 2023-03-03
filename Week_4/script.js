@@ -7,3 +7,4 @@ function print5() {
 }
 
 print5();
+print5();
