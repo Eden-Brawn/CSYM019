@@ -14,5 +14,7 @@ function myLoadFunction() {
     pelement.firstChild.nodeValue = 'Student';
 }
 
-document.addEventListener('DOMContentLoaded', myLoadFunction); //DOMContentLoaded calls the function until the page has loaded
+//document.addEventListener('DOMContentLoaded', myLoadFunction); //DOMContentLoaded calls the function until the page has loaded
 
+
+document.addEventListener('click', myLoadFunction); //Changes onclick instead of when page loads
