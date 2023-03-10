@@ -6,6 +6,7 @@ function styleChange(){
     //element.style.fontFamily = 'Verdana, Helvetica, Sans-serif';
     element.style.backgroundColor = 'blue';
     element.style.color = 'white';
+    element.style.opacity = '1';
 }
 
 function myLoadFunction(){
