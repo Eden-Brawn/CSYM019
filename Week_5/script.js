@@ -13,6 +13,9 @@ function myLoadFunction(){
     var element = document.getElementById('button');
     element.addEventListener('click', styleChange);
     element.style.opacity = '0.5';
+
+    var opacityValue = element.style.opacity;
+    console.log(opacityValue);
 }
 
 document.addEventListener('DOMContentLoaded', myLoadFunction);
