@@ -19,6 +19,7 @@ function myClickFunctionTwo() {
 function myLoadFunction() {
     var element = document.getElementById('text');
     element.addEventListener('click', myClickFunctionOne); //Changes onclick instead of when page loads
+    
     var pelement = document.getElementById('text2');
     pelement.addEventListener('click', myClickFunctionTwo); 
 }
