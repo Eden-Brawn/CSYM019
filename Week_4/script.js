@@ -6,15 +6,21 @@ function print5() {
     console.log("5");
 }
 
-
-function myLoadFunction() {
+function myClickFunctionOne() {
     var element = document.getElementById('text');
     element.firstChild.nodeValue = 'Eden Brawn';
+}
+
+function myClickFunctionTwo() {
     var pelement = document.getElementById('text2');
     pelement.firstChild.nodeValue = 'Student';
 }
 
-//document.addEventListener('DOMContentLoaded', myLoadFunction); //DOMContentLoaded calls the function until the page has loaded
+function myLoadFunction() {
+    var element = document.getElementById('text');
+    element.addEventListener('click', myClickFunctionOne); //Changes onclick instead of when page loads
+    var pelement = document.getElementById('text2');
+    pelement.addEventListener('click', myClickFunctionTwo); 
+}
 
-
-document.addEventListener('click', myLoadFunction); //Changes onclick instead of when page loads
+document.addEventListener('DOMContentLoaded', myLoadFunction); //DOMContentLoaded calls the function until the page has loaded
