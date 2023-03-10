@@ -1,4 +1,7 @@
 #button {
     width: 20%;
     height: 50%;
+    border-radius: 50%;
+    padding: 25%;
+    font-size: 1em
 }
