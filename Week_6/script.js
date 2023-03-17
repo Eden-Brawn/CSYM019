@@ -17,3 +17,25 @@ var nod = [//using JSON for arrays
 
 alert(nod[0]);
 alert(nod[1]);//calling arrays
+
+var course = [
+    {
+        "course": "msc computing",
+        "code": "CSYM019"
+    },
+    'yo'
+]
+
+alert(course[0].course);
+alert(course[1]);//calling arrays
+
+var courseTwo = {
+    "name": "name",
+    "class": [
+        'room',
+        'students'
+    ]
+} 
+
+alert(courseTwo.name);//calling objects
+alert(courseTwo.class);
