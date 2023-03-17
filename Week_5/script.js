@@ -21,7 +21,7 @@ function styleChange(){
 
 function myLoadFunction(){
     var element = document.getElementById('circle');
-    document.addEventListener('keydown', styleChange);
+    //document.addEventListener('keydown', styleChange);//calls style change when any key is pressed
     element.style.opacity = '1';
 
     var opacityValue = element.style.opacity;
@@ -34,4 +34,8 @@ function myLoadFunction(){
     //console.log(positionLeft);
 }
 
+function myKeyDown(event){
+    console.log(event.keyCode);//logs the value of the key pressed to the console
+}
+document.addEventListener('keydown', myKeyDown);
 document.addEventListener('DOMContentLoaded', myLoadFunction);
