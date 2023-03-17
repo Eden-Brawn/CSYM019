@@ -7,14 +7,18 @@ function styleChange(){
     //element.style.backgroundColor = 'blue';
     //element.style.color = 'white';
     //element.style.opacity = '1';
-    var cirleOpacity = parseFloat(element.style.opacity);
+    var cirleOpacity = parseFloat(element.style.opacity); //decreases opacity
     element.style.opacity = cirleOpacity - 0.1;
+}
+
+function timer(){
+    setInterval( styleChange, 1000);
 }
 
 function myLoadFunction(){
     var element = document.getElementById('circle');
-    element.addEventListener('click', styleChange);
-    element.style.opacity = '0.5';
+    element.addEventListener('click', timer);
+    element.style.opacity = '1';
 
     var opacityValue = element.style.opacity;
     console.log(opacityValue);
