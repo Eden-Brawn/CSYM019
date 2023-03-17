@@ -19,6 +19,36 @@ function styleChange(){
 //}
 
 
+
+
+function myKeyDown(event){
+    console.log(event.keyCode);//logs the value of the key pressed to the console
+    var element = document.getElementById('circle');
+    if (event.keyCode == 37){//moves button left
+        var positionLeft = element.offsetLeft; 
+        element.style.left = positionLeft - 10 + 'px';
+    }
+    if (event.keyCode == 39){//moves button right
+        var positionLeft = element.offsetLeft; 
+        element.style.left = positionLeft + 10 + 'px';
+    }
+    if (event.keyCode == 38){//moves button up
+        var positionTop = element.offsetTop; 
+        element.style.top = positionTop - 10 + 'px';
+    }
+    if (event.keyCode == 40){//moves button down
+        var positionTop = element.offsetTop; 
+        element.style.top = positionTop + 10 + 'px';
+    }
+}
+
+var myVariable = 0;//global variable
+
+function myClickEvent(){//adds clicks and prints to console
+    myVariable = myVariable + 1;
+    console.log(myVariable);
+}
+
 function myLoadFunction(){
     var element = document.getElementById('circle');
     //document.addEventListener('keydown', styleChange);//calls style change when any key is pressed
@@ -27,32 +57,13 @@ function myLoadFunction(){
     var opacityValue = element.style.opacity;
     console.log(opacityValue);
 
+    document.addEventListener('click', myClickEvent);
+
     //var element = document.getElementById('circle');
     //var positionTop = element.offsetTop; //Gets the distance form the top of the screen to the element in pixels
     //var positionLeft = element.offsetLeft; //Gets the distance form the left of the screen to the element in pixels
     //console.log(positionTop);
     //console.log(positionLeft);
-}
-
-function myKeyDown(event){
-    console.log(event.keyCode);//logs the value of the key pressed to the console
-    var element = document.getElementById('circle');
-    if (event.keyCode == 37){
-        var positionLeft = element.offsetLeft; 
-        element.style.left = positionLeft - 10 + 'px';
-    }
-    if (event.keyCode == 39){
-        var positionLeft = element.offsetLeft; 
-        element.style.left = positionLeft + 10 + 'px';
-    }
-    if (event.keyCode == 38){
-        var positionTop = element.offsetTop; 
-        element.style.top = positionTop - 10 + 'px';
-    }
-    if (event.keyCode == 40){
-        var positionTop = element.offsetTop; 
-        element.style.top = positionTop + 10 + 'px';
-    }
 }
 document.addEventListener('keydown', myKeyDown);
 document.addEventListener('DOMContentLoaded', myLoadFunction);
