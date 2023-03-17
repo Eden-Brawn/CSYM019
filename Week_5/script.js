@@ -1,5 +1,5 @@
 function styleChange(){
-    var element = document.getElementById('button');
+    var element = document.getElementById('circle');
     //element.style.color = 'blue';//Alloes you to change CSS
     //element.style.width = '100%';
     //element.style.height = '50%';
@@ -10,7 +10,7 @@ function styleChange(){
 }
 
 function myLoadFunction(){
-    var element = document.getElementById('button');
+    var element = document.getElementById('circle');
     element.addEventListener('click', styleChange);
     element.style.opacity = '0.5';
 
