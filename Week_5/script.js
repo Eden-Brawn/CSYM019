@@ -7,27 +7,31 @@ function styleChange(){
     //element.style.backgroundColor = 'blue';
     //element.style.color = 'white';
     //element.style.opacity = '1';
-    var cirleOpacity = parseFloat(element.style.opacity); //decreases opacity
-    element.style.opacity = cirleOpacity - 0.1;
+    //var cirleOpacity = parseFloat(element.style.opacity); //decreases opacity
+    //element.style.opacity = cirleOpacity - 0.1;
+   
+    var positionLeft = element.offsetLeft; 
+    element.style.left = positionLeft - 10 + 'px';
 }
 
-function timer(){
-    setInterval( styleChange, 1000);
-}
+//function timer(){
+//    setInterval( styleChange, 1000); //Calls stylechange every 1 second
+//}
+
 
 function myLoadFunction(){
     var element = document.getElementById('circle');
-    element.addEventListener('click', timer);
+    document.addEventListener('keydown', styleChange);
     element.style.opacity = '1';
 
     var opacityValue = element.style.opacity;
     console.log(opacityValue);
 
-    var element = document.getElementById('circle');
-    var positionTop = element.offsetTop; //Gets the distance form the top of the screen to the element in pixels
-    var positionLeft = element.offsetLeft; //Gets the distance form the left of the screen to the element in pixels
-    console.log(positionTop);
-    console.log(positionLeft);
+    //var element = document.getElementById('circle');
+    //var positionTop = element.offsetTop; //Gets the distance form the top of the screen to the element in pixels
+    //var positionLeft = element.offsetLeft; //Gets the distance form the left of the screen to the element in pixels
+    //console.log(positionTop);
+    //console.log(positionLeft);
 }
 
 document.addEventListener('DOMContentLoaded', myLoadFunction);
