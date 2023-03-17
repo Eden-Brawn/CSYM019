@@ -8,7 +8,7 @@ function styleChange(){
     //element.style.color = 'white';
     //element.style.opacity = '1';
     var cirleOpacity = parseFloat(element.style.opacity);
-    element.style.opacity = cirleOpacity + 0.1;
+    element.style.opacity = cirleOpacity - 0.1;
 }
 
 function myLoadFunction(){
