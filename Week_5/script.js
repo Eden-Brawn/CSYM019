@@ -22,6 +22,12 @@ function myLoadFunction(){
 
     var opacityValue = element.style.opacity;
     console.log(opacityValue);
+
+    var element = document.getElementById('circle');
+    var positionTop = element.offsetTop; //Gets the distance form the top of the screen to the element in pixels
+    var positionLeft = element.offsetLeft; //Gets the distance form the left of the screen to the element in pixels
+    console.log(positionTop);
+    console.log(positionLeft);
 }
 
 document.addEventListener('DOMContentLoaded', myLoadFunction);
