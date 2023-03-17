@@ -4,9 +4,11 @@ function styleChange(){
     //element.style.width = '100%';
     //element.style.height = '50%';
     //element.style.fontFamily = 'Verdana, Helvetica, Sans-serif';
-    element.style.backgroundColor = 'blue';
-    element.style.color = 'white';
-    element.style.opacity = '1';
+    //element.style.backgroundColor = 'blue';
+    //element.style.color = 'white';
+    //element.style.opacity = '1';
+    var cirleOpacity = parseFloat(element.style.opacity);
+    element.style.opacity = cirleOpacity + 0.1;
 }
 
 function myLoadFunction(){
