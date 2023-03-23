@@ -22,7 +22,7 @@ function styleChange(){
 function myKeyDown(event){
     console.log(event.keyCode);//logs the value of the key pressed to the console
     if (event.keyCode == 37){//moves button left
-        interval = setInterval(moveLeft, 10);
+        interval = setInterval(moveLeft, 10);//it times the function call
     }
     if (event.keyCode == 39){//moves button right
         interval = setInterval(moveRight, 10);
