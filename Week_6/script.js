@@ -18,7 +18,7 @@ var nod = [//using JSON for arrays
 alert(nod[0]);
 alert(nod[1]);//calling arrays
 
-var course = [
+var course = [//An object inside an array
     {
         "course": "msc computing",
         "code": "CSYM019"
@@ -29,7 +29,7 @@ var course = [
 alert(course[0].course);
 alert(course[1]);//calling arrays
 
-var courseTwo = {
+var courseTwo = {//An array inside an object
     "name": "name",
     "class": [
         'room',
