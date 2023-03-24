@@ -18,7 +18,7 @@ function styleChange(){
 //    setInterval( styleChange, 1000); //Calls stylechange every 1 second
 //}
 
-
+var internal = 0;
 function myKeyDown(event){
     console.log(event.keyCode);//logs the value of the key pressed to the console
     if (event.keyCode == 37){//moves button left
