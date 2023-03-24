@@ -1,0 +1,5 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Sightins Report",
+    "description": "Reports of rare animal sightinhs in Exland"
+}
