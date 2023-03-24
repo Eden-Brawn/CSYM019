@@ -1,7 +1,7 @@
 function myLoadFunction() {
     const ctx = document.getElementById('myChart').getContext('2d');
     var myChartConfig = {
-        type: 'bar',
+        type: 'doughnut',
         data: {
             labels: ['kcal', 'fat', 'saturates', 'carbs', 'sugars', 'fibre', 'protein', 'salt'],
             /* The two datasets are given below as twi items in an array of json objects, i.e. [{}, {}]*/
