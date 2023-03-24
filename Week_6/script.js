@@ -39,3 +39,4 @@ var courseTwo = {//An array inside an object
 
 alert(courseTwo.name);//calling objects
 alert(courseTwo.class);
+
