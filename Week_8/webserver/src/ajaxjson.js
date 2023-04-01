@@ -21,9 +21,9 @@ function makeAjaxRequest(){
 function showContents(){
     if (xhr.readyState == 4) {
         if (xhr.status == 200){
-
+            let data = JSON.parse(xhr.repsonseText);
         }else{
-            
+
         }
     }
 }
