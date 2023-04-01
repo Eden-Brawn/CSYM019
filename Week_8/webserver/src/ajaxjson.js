@@ -8,4 +8,12 @@ function makeAjaxRequest{
             xhr = new ActiveXObject("Microsoft.XMLHTTP");
         }
     }
+
+    if (xhr) {
+        xhr.open("GET", "counties.json", true);
+        xhr.send();
+        xhr.onreadstatechange = showContents;
+    }else {
+        document.getElementById("updatemessage").innerHTML = "Could not perform stated Request";
+    }
 }
