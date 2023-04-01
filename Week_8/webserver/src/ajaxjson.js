@@ -1,10 +1,11 @@
 window.onload = makeAjaxRequest;
 
-function makeAjaxRequest(){
-    if (window.XMLHttpRequest){
+function makeAjaxRequest() {
+    if (window.XMLHttpRequest) {
         xhr = new XMLHttpRequest();
-    }else{
-        if (window.ActiveXObject){
+    } 
+    else {
+        if (window.ActiveXObject) {
             xhr = new ActiveXObject("Microsoft.XMLHTTP");
         }
     }
@@ -12,23 +13,25 @@ function makeAjaxRequest(){
     if (xhr) {
         xhr.open("GET", "counties.json", true);
         xhr.send();
-        xhr.onreadstatechange = showContents;
-    }else {
+        xhr.onreadystatechange = showContents;
+    }
+    else {
         document.getElementById("updatemessage").innerHTML = "Could not perform stated Request";
     }
 }
 
-function showContents(){
+function showContents() {
     if (xhr.readyState == 4) {
-        if (xhr.status == 200){
-            let data = JSON.parse(xhr.repsonseText);
+        if (xhr.status == 200) {
+            let data = JSON.parse(xhr.responseText);
             let txt = "";
-            for (let i=0; i < data.counties.length; i++){
+            for (let i=0; i < data.counties.length; i++) {
                 txt += "<tr><td>" + data.counties[i].name + "</td></tr>";
             }
             document.getElementById("countylist").innerHTML = txt;
-        }else{
-            document.getElementById("updatemessage").innerHTML = "An error occured: " + xhr.status;
+        }
+        else {
+            document.getElementById("updatemessage").innerHTML = "An error occurred: " + xhr.status;
         }
     }
 }
