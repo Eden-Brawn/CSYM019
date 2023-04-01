@@ -28,7 +28,7 @@ function showContents(){
             }
             document.getElementById("countylist").innerHTML = txt;
         }else{
-
+            document.getElementById("updatemessage").innerHTML = "An error occured: " + xhr.status;
         }
     }
 }
