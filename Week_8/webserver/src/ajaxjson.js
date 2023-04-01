@@ -22,6 +22,10 @@ function showContents(){
     if (xhr.readyState == 4) {
         if (xhr.status == 200){
             let data = JSON.parse(xhr.repsonseText);
+            let txt = "";
+            for (let i=0; i < data.counties.length; i++){
+                txt += "<tr><td>" + data.counties[i].name + "</td></tr>";
+            }
         }else{
 
         }
