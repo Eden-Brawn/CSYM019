@@ -26,6 +26,7 @@ function showContents(){
             for (let i=0; i < data.counties.length; i++){
                 txt += "<tr><td>" + data.counties[i].name + "</td></tr>";
             }
+            document.getElementById("countylist").innerHTML = txt;
         }else{
 
         }
