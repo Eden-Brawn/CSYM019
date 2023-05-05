@@ -1,0 +1,9 @@
+#######THIS WORKS
+docker build -t my-php-app .
+docker run -it --rm --name my-running-app my-php-app
+
+######RUN WITHOUT DOCKER FILE
+docker run -d -p 80:80 --name my-apache-php-app -v C:\Users\edenb\MSc_Internet_Programming\CSYM019\Week_10\src\php-docker:/var/www/html php:7.2-apache
+
+#####NAME OF URL
+http://localhost/myFirstPHPScript_v1.php
